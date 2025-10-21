@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      🌸 DJS01: Vanilla JS Podcast App 
+      Author: Palesa Malatshi 
+      Description: A clean, responsive podcast app inspired by Spotify and YouTube, themed around women in tech.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Do It Afraid – A podcast platform celebrating introverted women in tech. Built by Palesa Malatshi." />
+    <title>Do It Afraid | Podcast App by Palesa Malatshi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="container header-container">
+        <img src="./assets/logo.png" alt="Podcast App Logo" class="logo" />
+        <h1 class="app-title">Do It Afraid</h1>
+        <p class="tagline">For the introverted creative in code.</p>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content container">
+      <h2 class="section-title">Featured Podcasts</h2>
+
+      <!-- Podcast Grid -->
+      <section id="podcastGrid" class="podcast-grid">
+        <!-- Podcasts dynamically rendered via JS from data.js -->
+      </section>
+    </main>
+
+    <!-- ================= MODAL ================= -->
+    <div id="podcastModal" class="modal hidden">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close Modal">&times;</button>
+
+        <!-- Dynamic modal content -->
+        <div class="modal-body">
+          <img src="" alt="Podcast Cover" class="modal-cover" />
+          <div class="modal-info">
+            <h3 class="modal-title"></h3>
+            <p class="modal-description"></p>
+            <div class="modal-genres"></div>
+            <p class="modal-date"></p>
+
+            <!-- Seasons list -->
+            <ul class="modal-seasons"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>&copy; 2025 Do It Afraid | Built with 💻 & courage by <strong>Palesa Malatshi</strong></p>
+      </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
